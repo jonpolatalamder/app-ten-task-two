@@ -1,0 +1,43 @@
+// @include textmaker($textColor, 18px, 700);
+
+.foodieland {
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 0 0 120px 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  padding: 40px 0;
+  @include displayS(row, space-between, center);
+
+  .logo {
+    width: 110px;
+    height: 30px;
+  }
+
+  .nav-menu-list {
+    @include displayS(row, center, center);
+    gap: 60px;
+    margin-top: 20px;
+
+    .nm-item {
+      .nvi-link {
+        @include textmaker($fsize: 18px);
+        text-decoration: none;
+      }
+    }
+  }
+
+  .social-list {
+    @include displayS(row, center, center);
+    gap: 40px;
+
+    .sllink {
+      .social-l-menu {
+        object-fit: contain;
+      }
+    }
+  }
+}

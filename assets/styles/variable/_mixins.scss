@@ -1,0 +1,22 @@
+// @mixin hr($hrWidth, $hrBorderSize, $hrColor){
+//     width: $hrWidth;
+//     border: $hrBorderSize solid $hrColor;
+// }
+
+@mixin textmaker($color: #000, $fsize: 14px, $fweight: 500) {
+  color: $color;
+  font-size: $fsize;
+  font-weight: $fweight;
+}
+
+@mixin displayS($column: column, $js: start, $ai: start) {
+  display: flex;
+  flex-direction: $column;
+  justify-content: $js;
+  align-items: $ai;
+}
+
+@mixin imgS($width: 20px, $height: 20px) {
+  width: $width;
+  height: $height;
+}

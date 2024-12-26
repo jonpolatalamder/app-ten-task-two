@@ -1,0 +1,73 @@
+.chiziq {
+  width: 100%;
+  border: 1px solid #000;
+}
+.main-page {
+  width: 100%;
+  height: 1077px;
+  padding: 80px 0 0 0;
+
+  .main-content {
+    @include displayS($js: center, $ai: center);
+    gap: 32px;
+    text-align: center;
+
+    h1 {
+      @include textmaker($fsize: 64px, $fweight: 600);
+    }
+
+    .main-middle {
+      @include displayS($column: row, $js: center, $ai: center);
+      gap: 60px;
+
+      .mm-left {
+        @include displayS($column: row, $js: center, $ai: center);
+        gap: 16px;
+
+        .main-avatar {
+          @include imgS($width: 40px, $height: 40px);
+        }
+
+        span {
+          @include textmaker($fsize: 16px, $fweight: 700);
+        }
+      }
+
+      .vertical-div {
+        margin-top: 10px;
+        @include displayS($column: row, $js: center, $ai: center);
+        gap: 26px;
+
+        .vertical-line {
+          width: 1px;
+          height: 40px;
+          background-color: rgba(0, 0, 0, 0.6);
+          border: none;
+          margin: 0;
+        }
+
+        h3 {
+          @include textmaker($color: rgba(0, 0, 0, 0.6));
+        }
+      }
+    }
+
+    p {
+      @include textmaker(
+        $color: rgba(0, 0, 0, 0.6),
+        $fsize: 16px,
+        $fweight: 400
+      );
+      margin-bottom: 32px;
+      margin-top: 16px;
+      width: 1060px;
+    }
+
+    .main-content-img {
+      @include imgS($width: 1280px, $height: 600px);
+      object-fit: contain;
+      border-radius: 30px;
+      margin-bottom: 80px;
+    }
+  }
+}

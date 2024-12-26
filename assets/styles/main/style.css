@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.foodieland {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  padding: 0 0 120px 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo {
+  width: 110px;
+  height: 30px;
+}
+.navbar .nav-menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+.navbar .nav-menu-list .nm-item .nvi-link {
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.navbar .social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.navbar .social-list .sllink .social-l-menu {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.chiziq {
+  width: 100%;
+  border: 1px solid #000;
+}
+
+.main-page {
+  width: 100%;
+  height: 1077px;
+  padding: 80px 0 0 0;
+}
+.main-page .main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+}
+.main-page .main-content h1 {
+  color: #000;
+  font-size: 64px;
+  font-weight: 600;
+}
+.main-page .main-content .main-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.main-page .main-content .main-middle .mm-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.main-page .main-content .main-middle .mm-left .main-avatar {
+  width: 40px;
+  height: 40px;
+}
+.main-page .main-content .main-middle .mm-left span {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+}
+.main-page .main-content .main-middle .vertical-div {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+.main-page .main-content .main-middle .vertical-div .vertical-line {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  margin: 0;
+}
+.main-page .main-content .main-middle .vertical-div h3 {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 500;
+}
+.main-page .main-content p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 32px;
+  margin-top: 16px;
+  width: 1060px;
+}
+.main-page .main-content .main-content-img {
+  width: 1280px;
+  height: 600px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 30px;
+  margin-bottom: 80px;
+}
+
+.ingredients .ingr-row {
+  padding: 0 70px;
+}
+.ingredients .ingr-row .ingredient-left {
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 56px;
+}
+.ingredients .ingr-row .ingredient-left .ing-list .ih-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+.ingredients .ingr-row .ingredient-left .ing-list .t-ing-img {
+  width: 840px;
+  height: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 32px;
+}
+.ingredients .ingr-row .ingredient-left .ing-list p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+}
+.ingredients .ingr-row .ingredient-left .quote {
+  width: 920px;
+  height: 225px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
+  padding: 40px 40px;
+}
+.ingredients .ingr-row .ingredient-left .quote h2 {
+  color: #000;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 64px;
+}
+.ingredients .ingr-row .ingredient-right {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 32px;
+}
+.ingredients .ingr-row .ingredient-right .share-title {
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ingredients .ingr-row .ingredient-right .share-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+.ingredients .ingr-row .ingredient-right .share-list .share-item .share-link img {
+  width: 10px;
+  height: 20px;
+}
+
+.inbox {
+  height: 442px;
+  background-color: rgb(231, 249, 253);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  border-radius: 60px;
+  background-image: url("../../images/inbox/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543 1.png"), url("../../images/inbox/Photo-plate.png");
+  background-position: bottom left, bottom right; /* Har bir rasmning joylashuvi */
+  background-repeat: no-repeat, no-repeat;
+}
+.inbox .inbox-title {
+  color: #000;
+  font-size: 48px;
+  font-weight: 600;
+}
+.inbox .inbox-text {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  width: 620px;
+  text-align: center;
+  margin-top: 24px;
+}
+.inbox .inbox-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 10px 10px 22px;
+  width: 480px;
+  height: 80px;
+  border-radius: 24px;
+  border: none;
+}
+.inbox .inbox-form input {
+  border: none;
+  outline: none;
+  height: 60px;
+}
+.inbox .inbox-form input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  font-weight: 500;
+}
+.inbox .inbox-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  font-weight: 500;
+}
+.inbox .inbox-form .subcribe {
+  width: 160px;
+  height: 60px;
+  border-radius: 16px;
+}
+
+.reciepe {
+  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.reciepe .rec-header .rh-r .rhr-c h1 {
+  font-weight: 600;
+  font-size: 48px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.reciepe .rec-header .rh-r .rhr-ct p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  width: 620px;
+  margin-top: 20px;
+}
+.reciepe .rec-body-row {
+  display: flex;
+  gap: 50px;
+}
+.reciepe .rec-body-row .rec-body {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  height: 316px;
+  position: relative;
+}
+.reciepe .rec-body-row .rec-body .recipe-body-image {
+  width: 290px;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 20px;
+}
+.reciepe .rec-body-row .rec-body .yurakcha-recipe {
+  z-index: 1;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 16px;
+  right: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reciepe .rec-body-row .rec-body .yurakcha-recipe img {
+  width: 20px;
+  height: 18px;
+}
+.reciepe .rec-body-row .rec-body .rb-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+  margin-top: 16px;
+}
+.reciepe .rec-body-row .rec-body .button-order-recipe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 24px;
+  margin-top: 14px;
+}
+.reciepe .rec-body-row .rec-body .button-order-recipe .button-order-recipe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+}
+.reciepe .rec-body-row .rec-body .button-order-recipe .button-order-recipe img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.reciepe .rec-body-row .rec-body .button-order-recipe .button-order-recipe h2 {
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 5px;
+}
+
+.footer {
+  margin-top: 160px;
+  height: 192px;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.footer .footer-header .f-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer .footer-header .f-left .footer-logo {
+  width: 110px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.footer .footer-header .f-left .footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  width: 400px;
+}
+.footer .footer-header .f-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.footer .footer-header .f-right .footer-menu {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+}
+.footer .footer-hr {
+  width: 100%;
+  border: 0.2px solid rgba(0, 0, 0, 0.1);
+}
+.footer .footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 338px;
+}
+.footer .footer-bottom .fb-title {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.footer .footer-bottom .fb-title span {
+  color: rgba(228, 74, 74, 0.644);
+}
+.footer .footer-bottom .footer-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+.footer .footer-bottom .footer-menu .fm-social {
+  text-decoration: none;
+}
+.footer .footer-bottom .footer-menu .fm-social img {
+  width: 10px;
+  height: 20px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}/*# sourceMappingURL=style.css.map */

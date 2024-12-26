@@ -1,0 +1,50 @@
+.inbox {
+  height: 442px;
+
+  background-color: rgba(231, 249, 253, 1);
+  @include displayS($js: center, $ai: center);
+  margin-top: 120px;
+  border-radius: 60px;
+
+  background-image: url("../../images/inbox/kisspng-salad-salad-fresh-food-healthylife-vegetables-vegetarian-5d42e3a7cb8543\ 1.png"),
+    url("../../images/inbox/Photo-plate.png");
+  background-position: bottom left, bottom right; /* Har bir rasmning joylashuvi */
+  background-repeat: no-repeat, no-repeat;
+
+  .inbox-title {
+    @include textmaker($fsize: 48px, $fweight: 600);
+  }
+
+  .inbox-text {
+    @include textmaker($color: rgba(0, 0, 0, 0.6), $fsize: 16px, $fweight: 400);
+    width: 620px;
+    text-align: center;
+    margin-top: 24px;
+  }
+
+  .inbox-form {
+    @include displayS($column: row, $js: space-between, $ai: center);
+    background-color: #fff;
+    padding: 10px 10px 10px 22px;
+    width: 480px;
+    height: 80px;
+    border-radius: 24px;
+    border: none;
+
+    input {
+      border: none;
+      outline: none;
+      height: 60px;
+
+      &::placeholder {
+        @include textmaker($color: rgba(0, 0, 0, 0.4));
+      }
+    }
+
+    .subcribe {
+      width: 160px;
+      height: 60px;
+      border-radius: 16px;
+    }
+  }
+}

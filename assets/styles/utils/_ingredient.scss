@@ -1,0 +1,72 @@
+.ingredients {
+  .ingr-row {
+    padding: 0 70px;
+    .ingredient-left {
+      padding-right: 20px;
+      @include displayS();
+      gap: 56px;
+
+      .ing-list {
+        .ih-title {
+          @include textmaker($fsize: 24px, $fweight: 600);
+          margin-bottom: 24px;
+        }
+
+        .t-ing-img {
+          width: 840px;
+          height: 400px;
+          object-fit: contain;
+          margin-bottom: 32px;
+        }
+
+        p {
+          @include textmaker(
+            $color: rgba(0, 0, 0, 0.6),
+            $fsize: 16px,
+            $fweight: 400
+          );
+        }
+      }
+
+      .quote {
+        width: 920px;
+        height: 225px;
+        background-image: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.05),
+          rgba(0, 0, 0, 0)
+        );
+        padding: 40px 40px;
+
+        h2 {
+          @include textmaker($fsize: 38px);
+          line-height: 64px;
+        }
+      }
+    }
+
+    .ingredient-right {
+      padding-left: 20px;
+      @include displayS($ai: center);
+      gap: 32px;
+
+      .share-title {
+        text-align: center;
+        @include textmaker($fweight: 600);
+      }
+      .share-list {
+        @include displayS($js: center, $ai: center);
+        gap: 48px;
+
+        .share-item {
+          .share-link {
+            img {
+              width: 10px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
